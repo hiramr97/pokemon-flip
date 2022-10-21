@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #181818;
+}
+
+h1 {
+    color: #b3b3b3;
+    padding-top: 10%;
+}
+
+.board-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    width: 415px;
+    margin-left: 38%;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+.boxes {
+    height: 110px;
+    width: 110px;
+    cursor: pointer;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+#mons {
+    margin-top: -200px;
+    display: none;
+}
+.charizard {
+    height: 105px;
+    width: 105px;
+}
+
+.pikachu {
+    height: 85px;
+    width: 85px;
+    padding-top: 10px;
+}
+
+.zapdos {
+    width: 110px
+}
+
+.moltres {
+    width: 108px;
+}
+
+.mewtwo {
+    width: 110px;
+}
