@@ -18,28 +18,46 @@ h1 {
     column-gap: 5px;
 }
 
-.boxes {
-    height: 110px;
-    width: 110px;
+.boxes-top,
+.boxes-bottom {
+    height: 100%;
+    width: 100%;
     cursor: pointer;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+
+.boxes-top:hover,
+.boxes-bottom:hover {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
 }
 
 img {
     height: 100px;
     width: 100px;
 }
-#mons {
-    margin-top: -200px;
-    display: none;
+
+.card {
+    /* backface-visibility: hidden; */
 }
+
+#mons,
+#mons-bottom {
+    margin-top: -200px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+
+}
+
 .charizard {
-    height: 105px;
-    width: 105px;
+    height: 100%;
+    width: 100%;
 }
 
 .pikachu {
-    height: 85px;
-    width: 85px;
+    height: 100%;
+    width: 100%;
     padding-top: 10px;
 }
 
