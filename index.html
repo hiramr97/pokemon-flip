@@ -7,89 +7,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
-    <title>Pokémon Flip</title>
+    <title>Pokemon Flip!</title>
 </head>
 
 <body>
-    <h1>
-        Pokémon Flip!
-    </h1>
-    <div class="board board-container">
-        <div class="boxes-top">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png" class="card">
-        </div>
-        <div class="boxes-top">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png" class="card">
-
-        </div>
-        <div class="boxes-top">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png" class="card">
-
-        </div>
-        <div class="boxes-top">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png" class="card">
-
-        </div>
-        <div class="boxes-top">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png" class="card">
-
-        </div>
-        <div class="boxes-top">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png" class="card">
-
-        </div>
-        <div class="boxes-top">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png" class="card">
-
-        </div>
-        <div class="boxes-top">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png" class="card">
-
-        </div>
-        <div class="boxes-bottom">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png" class="card">
-
-        </div>
-        <div class="boxes-bottom">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png" class="card">
-
-        </div>
-        <div class="boxes-bottom">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png" class="card">
-
-        </div>
-        <div class="boxes-bottom">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png" class="card">
-
-        </div>
-        <div class="boxes-bottom">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png" class="card">
-
-        </div>
-        <div class="boxes-bottom">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png" class="card">
-
-        </div>
-        <div class="boxes-bottom">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png" class="card">
-
-        </div>
-        <div class="boxes-bottom">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png" class="card">
-
-        </div>
+    <header>
+        <h1>
+            Pokemon Flip!
+        </h1>
+    </header>
+    <div class="game">
+        <ul class="pokemon">
+            <li class="card">
+                <div class="view front-view">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+                        id="pokeball">
+                </div>
+                <div class="view back-view">
+                    <!-- <img src="https://66.media.tumblr.com/tumblr_ma4fvrTeAk1rfjowdo1_500.gif"id="blastoise"> -->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+                        id="pokeball">
+                </div>
+                <div class="view back-view">
+                    <!-- <img src="https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_006.gif"> -->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+                        id="pokeball">
+                </div>
+                <div class="view back-view">
+                    <!-- <img src="https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_003_m.gif"> -->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+                        id="pokeball">
+                </div>
+                <div class="view back-view">
+                    <!-- <img src="https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_025_m.gif"> -->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+                        id="pokeball">
+                </div>
+                <div class="view back-view">
+                    <!-- <img src="https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_144.gif"> -->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+                        id="pokeball">
+                </div>
+                <div class="view back-view">
+                    <!-- <img src="https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_145.gif"> -->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+                        id="pokeball">
+                </div>
+                <div class="view back-view">
+                    <!-- <img src="https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_146.gif"> -->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+                        id="pokeball">
+                </div>
+                <div class="view back-view">
+                    <!-- <img src="https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_150.gif"> -->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+                        id="pokeball">
+                </div>
+                <div class="view back-view">
+                    <!-- <img src="https://66.media.tumblr.com/tumblr_ma4fvrTeAk1rfjowdo1_500.gif" id="blastoise"> -->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+                        id="pokeball">
+                </div>
+                <div class="view back-view">
+                    <!-- <img src="https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_006.gif"> -->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+                        id="pokeball">
+                </div>
+                <div class="view back-view">
+                    <!-- <img src="https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_003_m.gif"> -->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+                        id="pokeball">
+                </div>
+                <div class="view back-view">
+                    <!-- <img src="https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_025_m.gif"> -->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+                        id="pokeball">
+                </div>
+                <div class="view back-view">
+                    <!-- <img src="https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_144.gif"> -->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+                        id="pokeball">
+                </div>
+                <div class="view back-view">
+                    <!-- <img src="https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_145.gif"> -->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+                        id="pokeball">
+                </div>
+                <div class="view back-view">
+                    <!-- <img src="https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_146.gif"> -->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+                        id="pokeball">
+                </div>
+                <div class="view back-view">
+                    <!-- <img src="https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_150.gif"> -->
+                </div>
+            </li>
+        </ul>
     </div>
-    <!-- <div class="images">
-        <img src="https://66.media.tumblr.com/tumblr_ma4fvrTeAk1rfjowdo1_500.gif" class="blastoise" id="mons">
-        <img src="https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_006.gif" class="charizard" id="mons">
-        <img src="https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_003_m.gif" class="venusaur" id="mons">
-        <img src="https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_025_m.gif" class="pikachu" id="mons">
-        <img src="https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_144.gif" class="articuno" id="mons">
-        <img src="https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_145.gif" class="zapdos" id="mons">
-        <img src="https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_146.gif" class="moltres" id="mons">
-        <img src="https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_150.gif" class="mewtwo" id="mons">
-    </div> -->
-    <button class="reset-button">Try Again?</button>
+    <button class="resetGame">Try Again?</button>
 </body>
 
 </html>
