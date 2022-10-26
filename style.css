@@ -40,7 +40,6 @@ h1 {
     user-select: none;
     position: relative;
     perspective: 1000px;
-    transform: preserve-3d;
     height: calc(100% / 4 - 10px);
     width: calc(100% / 4 - 10px);
 }
@@ -65,6 +64,12 @@ h1 {
 .card.flip .front-view {
     transform: rotateY(180deg);
 
+}
+.card {
+    transition: opacity 0.3s;
+}
+.wrong {
+    opacity: 0;
 }
 
 #blastoise {
@@ -91,12 +96,11 @@ h1 {
 
 #modal-textbox {
     background-color: #282828;
-    height: 200px;
+    height: 250px;
     width: 550px;
     border-radius: 2px;
     margin: 150px auto;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    line-height: 300%;
     color: #ffffff
 }
 
