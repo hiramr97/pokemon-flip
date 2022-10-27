@@ -7,6 +7,11 @@ let imgSpace = document.querySelectorAll(".back-view");
 const openBtn = document.getElementById("openModal");
 const modal = document.getElementById("modal");
 const closeBtn = document.getElementById("close");
+const time = document.querySelector(".timer")
+const startTime = document.querySelector(".pokemon")
+let seconds = 0
+let interval = null
+
 
 const openModal = () => {
   modal.style.display = "block";
@@ -41,7 +46,7 @@ function macthCards(firstImg, secondImg) {
     turns++;
     if (turns == 8) {
       setTimeout(() => {
-        alert("You won the game!");
+        alert(`You won the game! You did it in ${time.innerText}! Think you can do better?`);
         return window.location.reload();
       }, 800);
     }
@@ -74,43 +79,43 @@ function shuffleBoard() {
     if (arr[i] === 1) {
       const img = document.createElement("img");
       img.src =
-        "https://66.media.tumblr.com/tumblr_ma4fvrTeAk1rfjowdo1_500.gif";
+      "https://66.media.tumblr.com/tumblr_ma4fvrTeAk1rfjowdo1_500.gif";
       img.id = "blastoise";
       imgSpace[i].appendChild(img);
     } else if (arr[i] === 2) {
       const img = document.createElement("img");
       img.src =
-        "https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_006.gif";
+      "https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_006.gif";
       imgSpace[i].appendChild(img);
     } else if (arr[i] === 3) {
       const img = document.createElement("img");
       img.src =
-        "https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_003_m.gif";
+      "https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_003_m.gif";
       imgSpace[i].appendChild(img);
     } else if (arr[i] === 4) {
       const img = document.createElement("img");
       img.src =
-        "https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_025_m.gif";
+      "https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_025_m.gif";
       imgSpace[i].appendChild(img);
     } else if (arr[i] === 5) {
       const img = document.createElement("img");
       img.src =
-        "https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_144.gif";
+      "https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_144.gif";
       imgSpace[i].appendChild(img);
     } else if (arr[i] === 6) {
       const img = document.createElement("img");
       img.src =
-        "https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_145.gif";
+      "https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_145.gif";
       imgSpace[i].appendChild(img);
     } else if (arr[i] === 7) {
       const img = document.createElement("img");
       img.src =
-        "https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_146.gif";
+      "https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_146.gif";
       imgSpace[i].appendChild(img);
     } else if (arr[i] === 8) {
       const img = document.createElement("img");
       img.src =
-        "https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_150.gif";
+      "https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_150.gif";
       imgSpace[i].appendChild(img);
     }
   });
@@ -124,3 +129,23 @@ resetGame.addEventListener("click", () => {
   window.location.reload();
 });
 shuffleBoard();
+
+startTime.addEventListener("click", start)
+
+function timer() {
+  seconds++
+
+  let mins = Math.floor(seconds / 60)
+  let secs = seconds % 60
+  if(secs < 10) secs = "0" + secs
+  if(mins < 10) mins = "0" + mins
+  time.innerText = `${mins}:${secs}`
+}
+function start () {
+  if(interval) {
+    return
+  }
+
+  interval = setInterval(timer, 1000)
+}
+timer()
