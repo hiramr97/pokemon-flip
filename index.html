@@ -1,168 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
     <title>Pokemon Flip!</title>
-</head>
-
-<body>
+  </head>
+  <body>
     <header>
-        <h1>
-            Pokemon Flip!
-        </h1>
-        <button class="modal-buttons" id="openModal">How to Play</button>
-        <div id="modal">
-            <div id="modal-textbox">
-                <h1>Learn how to play Pokemon Flip!</h1>
-                <p>Hi! Welcome to my game of Pokemon Flip!</p>
-                <p>The objective to the game is to flip every pokeball over to see if they match until there is no more pokeballs flipped. Then, you have won the game! Do you have what it takes?</p>
-                <div id="modal-footer">
-                    <button class="modal-buttons" id="close">Close</button>
-                </div>
-            </div>
+      <h1>Pokemon Flip!</h1>
+      <button class="modal-buttons" id="openModal">How to Play</button>
+      <div id="modal">
+        <div id="modal-textbox">
+          <h1>Learn how to play Pokemon Flip!</h1>
+          <p>Hi! Welcome to my game of Pokemon Flip!</p>
+          <p>
+            The objective to the game is to flip every pokeball over to see if
+            they match until there is no more pokeballs flipped. Then, you have
+            won the game! Do you have what it takes?
+          </p>
+          <div id="modal-footer">
+            <button class="modal-buttons" id="close">Close</button>
+          </div>
         </div>
+      </div>
     </header>
     <div class="game">
-        <ul class="pokemon">
-            <li class="card">
-                <div class="view front-view">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
-                        class="pokeball" alt="pokeball">
-                </div>
-                <div class="view back-view">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
-                        class="pokeball" alt="pokeball">
-                </div>
-                <div class="view back-view">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
-                        class="pokeball" alt="pokeball">
-                </div>
-                <div class="view back-view">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
-                        class="pokeball" alt="pokeball">
-                </div>
-                <div class="view back-view">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
-                        class="pokeball" alt="pokeball">
-                </div>
-                <div class="view back-view">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
-                        class="pokeball" alt="pokeball">
-                </div>
-                <div class="view back-view">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
-                        class="pokeball" alt="pokeball">
-                </div>
-                <div class="view back-view">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
-                        class="pokeball" alt="pokeball">
-                </div>
-                <div class="view back-view">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
-                        class="pokeball" alt="pokeball">
-                </div>
-                <div class="view back-view">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
-                        class="pokeball" alt="pokeball">
-                </div>
-                <div class="view back-view">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
-                        class="pokeball" alt="pokeball">
-                </div>
-                <div class="view back-view">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
-                        class="pokeball" alt="pokeball">
-                </div>
-                <div class="view back-view">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
-                        class="pokeball" alt="pokeball">
-                </div>
-                <div class="view back-view">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
-                        class="pokeball" alt="pokeball">
-                </div>
-                <div class="view back-view">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
-                        class="pokeball" alt="pokeball">
-                </div>
-                <div class="view back-view">
-                </div>
-            </li>
-            <li class="card">
-                <div class="view front-view">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
-                        class="pokeball" alt="pokeball">
-                </div>
-                <div class="view back-view">
-                </div>
-            </li>
-        </ul>
+      <ul class="pokemon">
+        <li class="card">
+          <div class="view front-view">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+              class="pokeball"
+              alt="pokeball"
+            />
+          </div>
+          <div class="view back-view"></div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+              class="pokeball"
+              alt="pokeball"
+            />
+          </div>
+          <div class="view back-view"></div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+              class="pokeball"
+              alt="pokeball"
+            />
+          </div>
+          <div class="view back-view"></div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+              class="pokeball"
+              alt="pokeball"
+            />
+          </div>
+          <div class="view back-view"></div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+              class="pokeball"
+              alt="pokeball"
+            />
+          </div>
+          <div class="view back-view"></div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+              class="pokeball"
+              alt="pokeball"
+            />
+          </div>
+          <div class="view back-view"></div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+              class="pokeball"
+              alt="pokeball"
+            />
+          </div>
+          <div class="view back-view"></div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+              class="pokeball"
+              alt="pokeball"
+            />
+          </div>
+          <div class="view back-view"></div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+              class="pokeball"
+              alt="pokeball"
+            />
+          </div>
+          <div class="view back-view"></div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+              class="pokeball"
+              alt="pokeball"
+            />
+          </div>
+          <div class="view back-view"></div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+              class="pokeball"
+              alt="pokeball"
+            />
+          </div>
+          <div class="view back-view"></div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+              class="pokeball"
+              alt="pokeball"
+            />
+          </div>
+          <div class="view back-view"></div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+              class="pokeball"
+              alt="pokeball"
+            />
+          </div>
+          <div class="view back-view"></div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+              class="pokeball"
+              alt="pokeball"
+            />
+          </div>
+          <div class="view back-view"></div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+              class="pokeball"
+              alt="pokeball"
+            />
+          </div>
+          <div class="view back-view"></div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"
+              class="pokeball"
+              alt="pokeball"
+            />
+          </div>
+          <div class="view back-view"></div>
+        </li>
+      </ul>
     </div>
     <div>
-        <div class="timer">00:00</div>
+      <div class="timer">00:00</div>
     </div>
     <button class="resetGame">Reset</button>
-</body>
-
+  </body>
 </html>
