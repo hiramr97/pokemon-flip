@@ -131,13 +131,10 @@ h1 {
   bottom: 0;
 }
 
-@media only screen and (max-width: 600px) {
-  .pokemon {
-    height: 200px;
-    width: 200px;
-  }
-  .pokeball {
-    height: 20px;
-    width: 20px;
-  }
+@media only screen and (max-width: 800px) {
+    .game {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
 }
