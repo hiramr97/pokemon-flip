@@ -15,3 +15,8 @@
 - As a player, I would like for the image to flip back over if it's not a match.
 
 - As a player, I would like for images to be in random spaces each time
+
+## References
+https://www.youtube.com/watch?v=Z2O3QxpcdSk&t=1086s
+
+https://www.youtube.com/watch?v=DABkhfsBAWw&t=1412s
