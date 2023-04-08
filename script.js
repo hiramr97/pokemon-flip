@@ -11,6 +11,8 @@ const time = document.querySelector(".timer");
 const startTime = document.querySelector(".pokemon");
 let seconds = 0;
 let interval = null;
+const pokeAPI = "https://pokeapi.co/api/v2/pokemon/"
+const game = document.getElementById("game")
 
 const openModal = () => {
   modal.style.display = "block";
@@ -69,9 +71,20 @@ function macthCards(firstImg, secondImg) {
   }, 800);
 }
 
-function shuffleBoard() {
+async function shuffleBoard() {
   turns = 0;
   firstChoice = secondChoice = "";
+  const randomIds = new Set()
+
+  while(randomIds.size < 8){
+    const randomNumber = Math.floor(Math.random() * 1009)
+    randomIds.add(randomNumber)
+  }
+  
+  const pokePromises = [...randomIds].map( id => fetch(pokeAPI + id))
+  const responses = await Promise.all(pokePromises)
+  return await Promise.all(responses.map(res => res.json()))
+
   let arr = [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8];
   arr.sort(() => Math.random() - 0.5);
   pokemon.forEach((card, i) => {
@@ -122,6 +135,23 @@ function shuffleBoard() {
   });
 }
 
+function displayBoard(pokemon) {
+  pokemon.sort( _ => Math.random() - 0.5)
+  const pokemonHTML = pokemon.map(pokemon => {
+    return `
+      <div class="card">
+        <img src="${pokemon.sprites.front_default}">
+      </div>
+    `
+  }).join("")
+  game.innerHTML = pokemonHTML
+}
+
+async function resetBoard() {
+  const pokemon = await shuffleBoard()
+  displayBoard([...pokemon, ...pokemon])
+}
+
 pokemon.forEach((card) => {
   card.addEventListener("click", flipCard);
 });
@@ -129,24 +159,25 @@ pokemon.forEach((card) => {
 resetGame.addEventListener("click", () => {
   window.location.reload();
 });
-shuffleBoard();
+
+resetBoard();
 
 startTime.addEventListener("click", start);
 
 function timer() {
   seconds++;
-
   let mins = Math.floor(seconds / 60);
   let secs = seconds % 60;
   if (secs < 10) secs = "0" + secs;
   if (mins < 10) mins = "0" + mins;
   time.innerText = `${mins}:${secs}`;
 }
+
 function start() {
   if (interval) {
     return;
   }
-
   interval = setInterval(timer, 1000);
 }
+
 timer();
