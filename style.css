@@ -5,7 +5,7 @@ body {
 
 header {
   color: #b3b3b3;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   width: 100%;
   text-align: center;
 }
@@ -21,6 +21,7 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 160px);
   grid-template-rows: repeat(4, 160px);
+  margin-bottom: 40px;
 }
 
 .card {
@@ -58,4 +59,16 @@ header {
 
 .wrong {
   opacity: 0;
+}
+
+button {
+  padding: 10px;
+  background-color: #404040;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  font-family: sans-serif;
+  cursor: pointer;
+  box-shadow: 10px black;
 }

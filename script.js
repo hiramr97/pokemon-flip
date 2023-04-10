@@ -1,5 +1,6 @@
 const pokeAPI = 'https://pokeapi.co/api/v2/pokemon/'
 const game = document.querySelector('.game')
+
 let firstChoice, secondChoice;
 isPaused = false;
 
@@ -20,7 +21,7 @@ const displayBoard = (pokemon) => {
   pokemon.sort(_ => Math.random() - 0.5)
   const pokemonHTML = pokemon.map(pokemon => {
     return `
-      <div class="card" onclick="flipCard(event)" data-name="${pokemon.name}">
+      <div class="card" onclick="flipCard(event)">
         <div class="view front-view">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png" class="pokeball" alt="pokeball"/>
         </div>
@@ -34,14 +35,18 @@ const displayBoard = (pokemon) => {
 }
 
 const resetBoard = async () => {
-  const pokemon = await loadBoard()
-  displayBoard([...pokemon, ...pokemon])
+  isPaused = true
+
+  setTimeout(async () => {
+    const pokemon = await loadBoard()
+    displayBoard([...pokemon, ...pokemon])
+    isPaused = false
+  }, 200)
 }
 
 const flipCard = (event) => {
   event.preventDefault();
   let clickedCard = event.currentTarget;
-  console.log(event.currentTarget.dataset.name)
   if (clickedCard !== firstChoice && !isPaused) {
     clickedCard.classList.add("flip");
     if (!firstChoice) {
