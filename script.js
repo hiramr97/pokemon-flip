@@ -4,9 +4,20 @@ const game = document.querySelector('.game')
 let firstChoice, secondChoice;
 isPaused = false;
 
+document.querySelector(".open").addEventListener("click", function() {
+  document.querySelector(".popup").classList.add("active")
+})
+
+document.querySelector(".close").addEventListener("click", function() {
+  document.querySelector(".popup").classList.remove("active")
+})
+
 const loadBoard = async () => {
   turns = 0
+  firstChoice = secondChoice = ""
+
   const randomIds = new Set()
+
   while (randomIds.size < 8) {
     const randomNumber = Math.floor(Math.random() * 1009)
     randomIds.add(randomNumber)
@@ -75,6 +86,7 @@ const macthCards = (firstImg, secondImg) => {
     firstChoice = secondChoice = "";
     return (isPaused = false);
   }
+
   setTimeout(() => {
     firstChoice.classList.add("wrong");
     secondChoice.classList.add("wrong");
@@ -87,6 +99,5 @@ const macthCards = (firstImg, secondImg) => {
     isPaused = false;
   }, 800);
 }
-
 
 resetBoard()
