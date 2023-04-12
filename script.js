@@ -67,11 +67,11 @@ const flipCard = (event) => {
     isPaused = true;
     let firstChoiceImg = firstChoice.querySelector(".back-view img").src;
     secondChoiceImg = secondChoice.querySelector(".back-view img").src;
-    macthCards(firstChoiceImg, secondChoiceImg);
+    matchCards(firstChoiceImg, secondChoiceImg);
   }
 }
 
-const macthCards = (firstImg, secondImg) => {
+const matchCards = (firstImg, secondImg) => {
   if (firstImg === secondImg) {
     turns++;
     if (turns == 8) {
