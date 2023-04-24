@@ -10,9 +10,10 @@ body {
 
 header {
   color: #b3b3b3;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   width: 100%;
   text-align: center;
+  padding-top: 30px;
 }
 
 .container {
